@@ -1,1 +1,13 @@
+body {
+  margin: 0;
+  background-color: bisque;
+}
 
+nav {
+  border: red 1px solid;
+}
+
+header {
+  border: red 1px solid;
+  margin: 10px;
+}
