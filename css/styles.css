@@ -13,6 +13,16 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
+/* satisfy-latin-400-normal */
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/satisfy@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/satisfy@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 .landing-page-body {
   min-height: 100vh;
   margin: 0;
@@ -92,6 +102,17 @@
   margin-bottom: 105px;
 }
 
+.landing-page-main strong {
+  font-family: 'Satisfy', cursive;
+  font-size: 5rem;
+  color: #A9CCC8;
+  transition: color 0.5s;
+}
+
+.landing-page-main strong:hover {
+  color: #1D363A;
+}
+
 .other-page-main {
   margin-bottom: 105px;
   display: flex;
@@ -137,13 +158,14 @@
   font-weight: 700;
   cursor: pointer;
   margin-top: 100px;
-  transition: background-color 0.7s, box-shadow 0.3s;
+  transition: background-color 0.7s, box-shadow 0.3s, transform 0.3s;
 }
 
 .btn:hover {
   background-color: #FEFAE0;
   color: #1D363A;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -160,13 +182,18 @@
   font-size: 0.9rem;
 }
 
-.footer a {
-  margin-left: 15px;
+.social-media a {
+  margin-left: 12px;
   text-decoration: none;
 }
 
-.footer .social-media img {
+.social-media img {
   width: 25px;
   height: 25px;
   margin-left: 15px;
+  transition: transform 0.1s;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
 }
