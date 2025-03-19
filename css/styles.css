@@ -158,13 +158,13 @@
   font-weight: 700;
   cursor: pointer;
   margin-top: 100px;
-  transition: background-color 0.7s, box-shadow 0.3s, transform 0.3s;
+  transition: background-color 0.5s, box-shadow 0.3s, transform 0.3s;
 }
 
 .btn:hover {
   background-color: #FEFAE0;
   color: #1D363A;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px #FEFAE0;
   transform: scale(1.1);
 }
 
