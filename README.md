@@ -1,6 +1,6 @@
 # Terabi
 
-![Terabi landing page](https://github.com/gld3n/terabi/blob/main/assets/terabi-landing,gif)
+![Terabi landing page](terabi-landing.gif)
 
 ## Tools used
 
