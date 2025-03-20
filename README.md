@@ -1,5 +1,7 @@
 # Terabi
 
+![Terabi landing page](https://github.com/gld3n/terabi/blob/main/assets/terabi-landing,gif)
+
 ## Tools used
 
 - [PNG color changer](https://onlinepngtools.com/change-png-color)
