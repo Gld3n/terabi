@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Satisfy&display=swap');
+
+/* Estilos generales para la página de aves */
+.other-page-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FEFAE0;
+  text-align: center;
+}
+
+.other-page-main {
+  padding: 20px;
+}
+
+.bird-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #16A085;
+  font-family: 'Satisfy', cursive; /* Fuente solo para los títulos */
+}
+
+.bird-info {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bird-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bird-gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bird-gallery img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Ajusta la imagen dentro del círculo */
+  border: 3px solid #16A085; /* Borde decorativo */
+  transition: transform 0.3s ease-in-out;
+}
+
+.bird-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Aplicar la fuente Satisfy a los títulos específicos */
+h2.characteristics, h2.curiosities, h2.ecological-importance, h2.species {
+  font-family: 'Satisfy', cursive; /* Fuente solo para estos títulos */
+}

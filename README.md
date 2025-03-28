@@ -1,13 +1,10 @@
-# Terabi
-
-![Terabi landing page](terabi-landing.gif)
+# terabi
 
 ## Tools used
 
 - [PNG color changer](https://onlinepngtools.com/change-png-color)
 - [PNG logos - PNGWing](https://www.pngwing.com)
 - [PNG logos - Flaticon](https://www.flaticon.com)
-- [Fonts - Fontsource](https://fontsource.org)
 
 ## Color palette
 
