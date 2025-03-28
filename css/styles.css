@@ -1,64 +1,92 @@
+/* Reset y fuentes */
 * {
   box-sizing: border-box;
+  /* border: red 1px solid; */
 }
 
-/* Fuente personalizada */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* roboto-latin-wght-normal */
 @font-face {
   font-family: 'Roboto Variable';
   font-style: normal;
   font-display: swap;
   font-weight: 100 900;
   src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-html, body {
-  height: 100%;
+/* Página principal */
+.landing-page-body {
+  min-height: 100vh;
   margin: 0;
+  background: url('../assets/img/background.jpg') no-repeat;
+  font-family: 'Roboto Variable', sans-serif;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-.landing-page-body,
+/* Otras páginas */
 .other-page-body {
-  flex: 1;
-  background-color: #FEFAE0;
+  min-height: 100vh;
+  margin: 0;
+  background-color:#FEFAE0 ;
   font-family: 'Roboto Variable', sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-.other-page-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #1D363A;
-  padding: 0 30px;
-  text-align: center;
-}
-
-/* Header */
-.terabi-header, .other-page-header {
-  padding: 10px 15px;
+/* Encabezado */
+.terabi-header {
+  background-color: #FEFAE0;
+  padding: 5px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1D363A;
 }
 
+.other-page-header {
+  padding: 12px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #FEFAE0;
+}
+
+/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
   color: #FEFAE0;
   text-decoration: none;
+  width: 6rem;
+  height: auto;
 }
 
-/* Navbar */
+.logo-container {
+  width: 5rem;
+  height: 5rem;
+}
+
+.logo img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+/* Navegación */
 .navbar a {
   position: relative;
   text-decoration: none;
-  color: #FEFAE0;
+  color: #1D363A;
+  font-weight: 400;
   font-size: 1.2rem;
   margin-right: 30px;
 }
@@ -69,7 +97,7 @@ html, body {
   top: 100%;
   height: 2px;
   width: 0;
-  background-color: #FEFAE0;
+  background-color: #1D363A;
   transition: width 0.3s;
 }
 
@@ -78,23 +106,127 @@ html, body {
   width: 100%;
 }
 
+/* Página principal contenido */
+.landing-page-main {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  color: #FEFAE0;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 105px;
+}
+
+.landing-page-main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.landing-page-main .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Páginas secundarias contenido */
+.other-page-main {
+  flex: 1;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #1D363A;
+  padding: 0 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.other-page-main h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.other-page-main p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+/* Botón */
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #FEFAE0;
+  border: 2px solid #FEFAE0;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 100px;
+  transition: background-color 0.7s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  background-color: #FEFAE0;
+  color: #1D363A;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.descripcion-terabi {
+  padding: 20px;
+}
+
+
 /* Footer */
 .footer {
   width: 100%;
-  background: #1D363A;
-  color: #FEFAE0;
-  text-align: center;
   padding: 10px 15px;
+  background: #1D363A;
+  height: 50px;
+  color: #FEFAE0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
-  position: relative; /* Quitamos absolute */
-  margin-top: auto; /* Empuja el footer hacia abajo */
+  position: relative;
+  margin-top: auto;
+}
+
+.footer a {
+  margin-left: 15px;
+  text-decoration: none;
 }
 
 .footer .social-media img {
   width: 25px;
   height: 25px;
   margin-left: 15px;
+}
+.animales-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #16A085;
+  font-family: 'Satisfy', cursive;
+}
+.cursiva{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: 'Satisfy', cursive;
+  font-size: 4em;
+  color: #16A085;
+  text-align: center;
+}
+
+.cursiva2 {
+  font-size: 2em;
+  margin: 0;
+  color: #16A085;
+  font-family: 'Satisfy', cursive;
 }
