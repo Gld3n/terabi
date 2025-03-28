@@ -17,6 +17,12 @@ h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más sutil */
 }
 
+.insect-image{
+    width: 600px; /* Tamaño reducido para un diseño más ligero */
+    height: auto; /* Tamaño reducido para un diseño más ligero */
+    border-radius: 40px;
+}
+
 p, ul {
     font-size: 1.1em; /* Tamaño de fuente ligeramente reducido */
     line-height: 1.5; /* Espaciado de línea más compacto */

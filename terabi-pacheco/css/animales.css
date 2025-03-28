@@ -1,0 +1,96 @@
+/* Estilos generales para la página de animales */
+.other-page-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEFAE0;
+    text-align: center;
+}
+
+.other-page-main {
+    padding: 20px;
+}
+
+
+
+.animales-info {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    background:  white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.animales-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.animales-gallery a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.animales-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    border: 3px solid #16A085; /* Borde decorativo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.animales-gallery img:hover {
+    transform: scale(1.1);
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.circle-video {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover; /* Ajusta la imagen dentro del área sin distorsionarse */
+    object-position: center; /* Centra el video dentro del área */
+    border: 3px solid #16A085;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.animal img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+    border: 3px solid #16A085; /* Borde decorativo */
+    transition: transform 0.3s ease-in-out;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #16A085;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #16A085;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #16A085;
+    color: white;
+}
+
+
