@@ -3,68 +3,74 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="../css/styles.css">  
-  <link rel="stylesheet" href="../css/Aves.css">  
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="../css/animales.css">  
   <title>Terabi - Descubre la biodiversidad</title>  
 </head>  
 <body class="other-page-body">  
-  <header class="other-page-header">  
-    <a href="../landing.html" class="logo">Terabi</a>  
-    <nav class="navbar">  
-      <a href="sobre_nosotros.html">Sobre nosotros</a>  
-      <a href="contacto.html">Contacto</a>  
-    </nav>  
-  </header>  
+    <header class="terabi-header">
+        <a href="../landing.html" class="logo">
+          <div class="logo-container">
+            <img src="../assets/img/Logo2.png" alt="logo">
+          </div>
+        </a>
+        <nav class="navbar">
+          <a href="sobre_nosotros.html">Sobre nosotros</a>
+          <a href="contacto.html" >Contacto</a>
+        </nav>
+      </header>  
   <main class="other-page-main">  
-    <h1 class="bird-title">Aves</h1>  
+    <h1 class="animales-title">Aves</h1>
+    <div class="video-container">
+      <video id="Video" class="circle-video" poster="../assets/img/tucan_carrusel.jpg">
+          <source src="../assets/video/avesm.mp4" type="video/mp4">
+          Tu navegador no soporta videos.
+      </video>
+    </div>
+  
 
-    <section class="bird-info">
-      Las aves son un grupo de animales vertebrados que se caracterizan por tener plumas, alas y un pico sin dientes. Se encuentran en casi todos los ecosistemas del planeta y desempeñan un papel fundamental en la naturaleza.
+    <section class="animales-info">
+      <p>Las aves son un grupo de animales vertebrados que se caracterizan por tener plumas, alas y un pico sin dientes. Se encuentran en casi todos los ecosistemas del planeta y desempeñan un papel fundamental en la naturaleza.</p>
 
-      <h2>Características generales</h2>
-    
-        Tamaño variado: desde pequeños colibríes de 5 cm hasta avestruces de más de 2 metros.
+      <h2 class="cursiva2">Características generales</h2 class="cursiva2">
+      <p>Tamaño variado: desde pequeños colibríes de 5 cm hasta avestruces de más de 2 metros.
         Huesos huecos que las hacen más livianas para volar.
         Se reproducen mediante huevos y construyen nidos para proteger a sus crías.
-        Muchas aves tienen un canto distintivo que utilizan para comunicarse.
-    
+        Muchas aves tienen un canto distintivo que utilizan para comunicarse.</p>
 
-      <h2>Importancia ecológica</h2>
-    
-        Las aves ayudan a mantener el equilibrio del ecosistema al dispersar semillas, 
+      <h2 class="cursiva2">Importancia ecológica</h2 class="cursiva2">
+      <p>Las aves ayudan a mantener el equilibrio del ecosistema al dispersar semillas, 
         polinizar flores y controlar plagas de insectos. 
         Algunas especies son bioindicadores, lo que significa que su presencia o 
-        ausencia refleja el estado de salud del medio ambiente.
-      
+        ausencia refleja el estado de salud del medio ambiente.</p>
 
-      <h2>Curiosidades sobre las aves</h2>
-    
-        El águila real puede ver a su presa a más de 3 km de distancia.
+      <h2 class="cursiva2">Curiosidades sobre las Aves</h2 class="cursiva2">
+      <p>El águila real puede ver a su presa a más de 3 km de distancia.
         El halcón peregrino es el animal más rápido del mundo, alcanzando hasta 390 km/h en picada.</li>
         Los colibríes pueden batir sus alas hasta 80 veces por segundo.
-        Existen más de 10,000 especies de aves en el mundo.
-      
+        Existen más de 10,000 especies de aves en el mundo.</p>
     </section>
 
-    <h2>Especies destacadas</h2>
-    <div class="bird-gallery">
+    <h2 class="cursiva2">Especies destacadas</h2 class="cursiva2">
+    <div class="animales-gallery">
       <a href="../Pages/Aves/aguilas.html">
-        <img src="../assets/img/aguila.png" alt="Águila">
+        <img src="../assets/img/aguila.png" alt="Águilas">
       </a>
       <a href="../Pages/Aves/colibris.html">
-        <img src="../assets/img/colibri.png" alt="Colibrí">
+        <img src="../assets/img/colibri.png" alt="Colibris">
       </a>
       <a href="../Pages/Aves/gaviotas.html">
-        <img src="../assets/img/gaviota.png" alt="Gaviota">
+        <img src="../assets/img/gaviota.png" alt="Gaviotas">
       </a>
       <a href="../Pages/Aves/halcones.html">
-        <img src="../assets/img/halcon.png" alt="Halcón">
+        <img src="../assets/img/halcon.png" alt="Halcones">
       </a>
       <a href="../Pages/Aves/tucanes.html">
-        <img src="../assets/img/tucan.png" alt="Tucán">
+        <img src="../assets/img/tucan.png" alt="Tucanes">
       </a>
     </div>
-
+    <a href="./species.html" class="back-link">⬅ Volver a la sección de especies</a>
   </main>  
   <footer class="footer">  
     <p class="copyright-text">© Terabi 2025</p>  
@@ -79,6 +85,7 @@
         <img src="../assets/img/github.png" alt="Github">  
       </a>  
     </div>  
-  </footer>  
+  </footer>
+  <script src="../js/animales.js"></script>  
 </body>  
 </html>
