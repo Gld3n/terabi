@@ -1,5 +1,6 @@
 /* Estilos generales para la página de animales */
 .other-page-body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FEFAE0;
@@ -14,12 +15,15 @@
 
 .animales-info {
     max-width: 800px;
-    margin: 0 auto 30px auto;
+    margin: 0;
     text-align: left;
     background:  white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.animales-info p{
+    font-size: 1em
 }
 
 .animales-gallery {
@@ -28,6 +32,10 @@
     gap: 20px;
     justify-content: center;
     padding: 20px;
+}
+
+.animales-info ul {
+    margin: 0;
 }
 
 .animales-gallery a {
@@ -50,14 +58,18 @@
     transform: scale(1.1);
 }
 .video-container {
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .circle-video {
     width: 300px;
-    height: 350px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover; /* Ajusta la imagen dentro del área sin distorsionarse */
     object-position: center; /* Centra el video dentro del área */

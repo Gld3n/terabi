@@ -1,35 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/carrusel.css" />
   <title>Terabi - Descubre la biodiversidad</title>
+  
 </head>
 <body class="other-page-body">
-  <header class="other-page-header">
-    <a href="../landing.html" class="logo">Terabi</a>
+  <header class="terabi-header">
+    <a href="../landing.html" class="logo">
+      <div class="logo-container">
+        <img src="../assets/img/Logo2.png" alt="logo">
+      </div>
+    </a>
     <nav class="navbar">
       <a href="sobre_nosotros.html">Sobre nosotros</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="active-tab">Contacto</a>
     </nav>
   </header>
+ <h1 class="cursiva">Animales </h1>
+ <div class="carrusel">
+  <!-- Zonas clicables para mover el carrusel -->
+  <div class="click-area left" id="go-left"></div>
+  <div class="click-area right" id="go-right"></div>
+
+  <div class="slides" id="slide-track">
+    <!-- Cada imagen tiene su enlace para redirigir -->
+    <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
+    <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
+    <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
+    <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
+    <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
+
+    <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
+    <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
+    <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
+    <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
+    <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
+  </div>
+  <div class="nav-manual">
+    <span class="dot" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+</div>
+
   <main class="other-page-main">
-    <h1>Especies</h1>
+    <h1 class="cursiva">¿Que es Terabi? </h1>
+    <h2 class="descripcion-terabi">
+      En Terabi podrás explorar una fascinante variedad de especies animales y descubrir 
+      datos sobre cada una de ellas. Dentro de las imágenes encontrarás enlaces directos a las 
+      páginas dedicadas a cada animal, donde podrás profundizar más en su mundo.
+    </h2>
+    
+    
   </main>
+  
+  
   <footer class="footer">
     <p class="copyright-text">© Terabi 2025</p>
     <div class="social-media">
       <a class="instagram" href="https://www.instagram.com/">
-        <img src="../assets/img/instagram.png" alt="Instagram">
+        <img src="../assets/img/instagram.png" alt="Instagram" />
       </a>
       <a class="pinterest" href="https://www.pinterest.com/">
-        <img src="../assets/img/pinterest.png" alt="Pinterest">
+        <img src="../assets/img/pinterest.png" alt="Pinterest" />
       </a>
       <a class="github" href="https://www.github.com/gld3n/terabi">
-        <img src="../assets/img/github.png" alt="Github">
+        <img src="../assets/img/github.png" alt="Github" />
       </a>
     </div>
   </footer>
+
+  <script src="../js/carrusel.js"></script>
 </body>
 </html>

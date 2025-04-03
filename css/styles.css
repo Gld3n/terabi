@@ -148,6 +148,7 @@ html, body {
 }
 
 .other-page-main h1 {
+  margin-top: 20px;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -155,7 +156,10 @@ html, body {
 .other-page-main p {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-top: 30px;
+ 
+}
+.other-page-main .descripcion-terabi{
+  font-size: 1.5em;
 }
 
 /* Botón */
@@ -179,6 +183,7 @@ html, body {
 }
 .descripcion-terabi {
   padding: 20px;
+  font-size: 1em;
 }
 
 
@@ -223,10 +228,10 @@ html, body {
   color: #16A085;
   text-align: center;
 }
-
-.cursiva2 {
+.cursiva2{
   font-size: 2em;
   margin: 0;
   color: #16A085;
   font-family: 'Satisfy', cursive;
+  
 }
