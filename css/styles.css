@@ -25,7 +25,7 @@ html, body {
 .landing-page-body {
   min-height: 100vh;
   margin: 0;
-  background: url('../assets/img/background.jpg') no-repeat;
+  background: url('../assets/img/background-forest.jpg') no-repeat;
   font-family: 'Roboto Variable', sans-serif;
   background-size: cover;
   background-position: center;
@@ -120,6 +120,17 @@ html, body {
   margin-bottom: 105px;
 }
 
+.landing-page-main strong {
+  font-family: 'Satisfy', cursive;
+  font-size: 5rem;
+  color: #A9CCC8;
+  transition: color 0.5s;
+}
+
+.landing-page-main strong:hover {
+  color: #1D363A;
+}
+
 .landing-page-main h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -173,13 +184,14 @@ html, body {
   font-weight: 700;
   cursor: pointer;
   margin-top: 100px;
-  transition: background-color 0.7s, box-shadow 0.3s;
+  transition: background-color 0.5s, box-shadow 0.3s, transform 0.3s;
 }
 
 .btn:hover {
   background-color: #FEFAE0;
   color: #1D363A;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px #FEFAE0;
+  transform: scale(1.1);
 }
 .descripcion-terabi {
   padding: 20px;
@@ -212,6 +224,18 @@ html, body {
   height: 25px;
   margin-left: 15px;
 }
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  transition: transform 0.1s;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
 .animales-title {
   margin-top: 0px;
   margin-bottom: 10px;
