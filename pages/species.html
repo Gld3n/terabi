@@ -10,56 +10,97 @@
   
 </head>
 <body class="other-page-body">
-  <header class="terabi-header">
-    <a href="../landing.html" class="logo">
-      <div class="logo-container">
-        <img src="../assets/img/Logo2.png" alt="logo">
+  <div class="wrapper">
+    <header class="terabi-header">
+      <a href="../landing.html" class="logo">
+        <div class="logo-container">
+          <img src="../assets/img/Logo2.png" alt="logo">
+        </div>
+      </a>
+      <nav class="navbar">
+        <a href="sobre_nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html" class="active-tab">Contacto</a>
+      </nav>
+    </header>
+   <h1 class="cursiva">Animales </h1>
+    <main class="other-page-main">
+      <div class="carrusel">
+        <!-- Zonas clicables para mover el carrusel -->
+        <div class="click-area left" id="go-left"></div>
+        <div class="click-area right" id="go-right"></div>
+      
+        <div class="slides" id="slide-track">
+          <!-- Cada imagen tiene su enlace para redirigir -->
+          <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
+          <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
+          <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
+          <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
+          <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
+      
+          <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
+          <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
+          <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
+          <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
+          <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
+        </div>
+        <div class="nav-manual">
+          <span class="dot" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
       </div>
-    </a>
-    <nav class="navbar">
-      <a href="sobre_nosotros.html">Sobre nosotros</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
- <h1 class="cursiva">Animales </h1>
- <div class="carrusel">
-  <!-- Zonas clicables para mover el carrusel -->
-  <div class="click-area left" id="go-left"></div>
-  <div class="click-area right" id="go-right"></div>
-
-  <div class="slides" id="slide-track">
-    <!-- Cada imagen tiene su enlace para redirigir -->
-    <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
-    <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
-    <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
-    <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
-    <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
-
-    <a href="Aves.html" class="slide"><img src="../assets/img/tucan_carrusel.jpg" alt="Especie 1" /></a>
-    <a href="Mamiferos_T.html" class="slide"><img src="../assets/img/oso_carrusel.png" alt="Especie 2" /></a>
-    <a href="Insectos_Aracnidos.html" class="slide"><img src="../assets/img/Mantis_carrusel.png" alt="Especie 3" /></a>
-    <a href="Mamiferos_M.html" class="slide"><img src="../assets/img/Orca_carrusel.png" alt="Especie 4" /></a>
-    <a href="Reptiles_Anfibios.html" class="slide"><img src="../assets/img/Rana_carrusel.png" alt="Especie 5" /></a>
-  </div>
-  <div class="nav-manual">
-    <span class="dot" data-index="0"></span>
-    <span class="dot" data-index="1"></span>
-    <span class="dot" data-index="2"></span>
-  </div>
-</div>
-
-  <main class="other-page-main">
-    <h1 class="cursiva">¿Que es Terabi? </h1>
-    <h2 class="descripcion-terabi">
-      En Terabi podrás explorar una fascinante variedad de especies animales y descubrir 
-      datos sobre cada una de ellas. Dentro de las imágenes encontrarás enlaces directos a las 
-      páginas dedicadas a cada animal, donde podrás profundizar más en su mundo.
-    </h2>
-    
-    
-  </main>
   
-  
+      <h1 class="cursiva">¿Que es Terabi? </h1>
+      <h2 class="descripcion-terabi">
+        En Terabi podrás explorar una fascinante variedad de especies animales y descubrir 
+        datos sobre cada una de ellas. Dentro de las imágenes encontrarás enlaces directos a las 
+        páginas dedicadas a cada animal, donde podrás profundizar más en su mundo.
+      </h2>
+      <!-- Cartelera llamativa -->
+      <article class="cartelera">
+        <section class="cartel-item">
+          <a href="Reptiles_Anfibios.html">
+            <img class="cartel-image" src="../assets/img/Cocodrilo.png" alt="Cocodrilo">
+            <footer class="cartel-footer">
+          <p>¿Quieres conocer la mordida más fuerte del mundo?</p>
+            </footer>
+          </a>
+        </section>
+        <section class="cartel-item">
+          <a href="Mamiferos_T.html">
+            <img class="cartel-image" src="../assets/img/leon.png" alt="León">
+            <footer class="cartel-footer">
+          <p>Descubre al verdadero rey de la selva</p>
+            </footer>
+          </a>
+        </section>
+        <section class="cartel-item">
+          <a href="Insectos_Aracnidos.html">
+            <img class="cartel-image" src="../assets/img/tarantula.png" alt="Tarántula">
+            <footer class="cartel-footer">
+          <p>¿Sabías que algunas arañas pueden planear en el aire?</p>
+            </footer>
+          </a>
+        </section>
+        <section class="cartel-item">
+          <a href="Mamiferos_M.html">
+            <img class="cartel-image" src="../assets/img/orca.jpg" alt="Orca">
+            <footer class="cartel-footer">
+          <p>El depredador más temido del océano</p>
+            </footer>
+          </a>
+        </section>
+        <section class="cartel-item">
+          <a href="Aves.html">
+            <img class="cartel-image" src="../assets/img/colibri.png" alt="Colibrí">
+            <footer class="cartel-footer">
+          <p>El ave que puede volar en todas direcciones</p>
+            </footer>
+          </a>
+        </section>
+      </article>
+    </main>
+  </div>
   <footer class="footer">
     <p class="copyright-text">© Terabi 2025</p>
     <div class="social-media">
