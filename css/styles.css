@@ -22,19 +22,21 @@ html, body {
 }
 
 /* Página principal */
-.landing-page-body {
+.landing-page-body .wrapper {
   min-height: 100vh;
   margin: 0;
-  background: url('../assets/img/background-forest.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../assets/img/background-forest.jpg') no-repeat;
   font-family: 'Roboto Variable', sans-serif;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Otras páginas */
-.other-page-body {
+.other-page-body .wrapper {
   min-height: 100vh;
   margin: 0;
   background-color:#FEFAE0 ;
@@ -198,6 +200,11 @@ html, body {
   font-size: 1em;
 }
 
+.copyright-text {
+  font-size: 0.9rem;
+  color: #FEFAE0;
+  font-family: "Roboto Variable", cursive;
+}
 
 /* Footer */
 .footer {
@@ -205,11 +212,9 @@ html, body {
   padding: 10px 15px;
   background: #1D363A;
   height: 50px;
-  color: #FEFAE0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
   position: relative;
   margin-top: auto;
 }
