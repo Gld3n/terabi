@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="styles/style_planetas.css">
+  <link rel="stylesheet" href="styles/style_modal.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class='logo'>
+    Solar explorer
+  
+  </h1>
+  <input class='planet9' id='pluto' type='radio' name='planet'>
+  <label class='menu pluto' for='pluto'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Pluto
+      </h2>
+      <h3>39.5 AU</h3>
+    </div>
+  </label>
+  <input class='planet8' id='neptune' type='radio' name='planet'>
+  <label class='menu neptune' for='neptune'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Neptune
+      </h2>
+      <h3>30.06 AU</h3>
+    </div>
+  </label>
+  <input class='planet7' id='uranus' type='radio' name='planet'>
+  <label class='menu uranus' for='uranus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Uranus
+      </h2>
+      <h3>19.18 AU</h3>
+    </div>
+  </label>
+  <input class='planet6' id='saturn' type='radio' name='planet'>
+  <label class='menu saturn' for='saturn'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Saturn
+      </h2>
+      <h3>9.539 AU</h3>
+    </div>
+  </label>
+  <input class='planet5' id='jupiter' type='radio' name='planet'>
+  <label class='jupiter menu' for='jupiter'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Jupiter
+      </h2>
+      <h3>5.203 AU</h3>
+    </div>
+  </label>
+  <input class='planet4' id='mars' type='radio' name='planet' checked='checked'>
+  <label class='mars menu' for='mars'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mars
+      </h2>
+      <h3>1.524 AU</h3>
+    </div>
+  </label>
+  <input class='planet3' id='earth' type='radio' name='planet' checked='checked'>
+  <label class='earth menu' for='earth'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Earth
+      </h2>
+      <h3>1 AU</h3>
+    </div>
+  </label>
+  <input class='planet2' id='venus' type='radio' name='planet' checked='checked'>
+  <label class='menu venus' for='venus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Venus
+      </h2>
+      <h3>0.723 AU</h3>
+    </div>
+  </label>
+  <input class='planet1' id='mercury' type='radio' name='planet' checked='checked'>
+  <label class='menu mercury' for='mercury'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mercury
+      </h2>
+      <h3>0.39 AU</h3>
+    </div>
+  </label>
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='mercury planet'>
+        <div class='mercury planet_description'>
+          <h2>Planet</h2>
+          <h1>Mercury</h1>
+          <p>Mercurio, el planeta más cercano al Sol, un viaje abrasador.</p>
+          <label for='readMercury'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet venus'>
+        <div class='planet_description venus'>
+          <h2>Planet</h2>
+          <h1>Venus</h1>
+          <p>Venus, el infierno celestial donde las nubes de ácido arden bajo un sol implacable.</p>
+          <p>.</p>
+          <label for='readVenus'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='earth planet'>
+        <div class='moon moon'>
+          <h3>Moon</h3>
+          <h2>Moon</h2>
+        </div>
+        <div class='m trajectory'></div>
+        <div class='earth planet_description'>
+          <h2>Planet</h2>
+          <h1>Earth</h1>
+          <p>La Tierra, un oasis azul en el vasto vacío, donde la vida florece en su máxima expresión.</p>
+          <label for='readEarth'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='mars planet'>
+        <div class='deimos moon'>
+          <h3>Moon</h3>
+          <h2>Deimos</h2>
+        </div>
+        <div class='d trajectory'></div>
+        <div class='moon phoebos'>
+          <h3>Moon</h3>
+          <h2>Phoebos</h2>
+        </div>
+        <div class='p trajectory'></div>
+        <div class='mars planet_description'>
+          <h2>Planet</h2>
+          <h1>Mars</h1>
+          <p>Marte, el planeta rojo, un desierto helado donde la esperanza de colonización despierta.</p>
+          <label for='readMars'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='jupiter planet'>
+        <div class='lo moon'>
+          <h3>Moon</h3>
+          <h2>Io</h2>
+        </div>
+        <div class='europa moon'>
+          <h3>Moon</h3>
+          <h2>Europa</h2>
+        </div>
+        <div class='ganymede moon'>
+          <h3>Moon</h3>
+          <h2>Ganymede</h2>
+        </div>
+        <div class='lop trajectory'></div>
+        <div class='eu trajectory'></div>
+        <div class='ga trajectory'></div>
+        <div class='jupiter planet_description'>
+          <h2>Planet</h2>
+          <h1>Jupiter</h1>
+          <p>Júpiter, el gigante gaseoso que reina con su gran tormenta eterna y su inmensidad imponente.</p>
+          <label for='readJupiter'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet saturn'>
+        <div class='moon titan'>
+          <h3>Moon</h3>
+          <h2>Titan</h2>
+        </div>
+        <div class='dione moon'>
+          <h3>Moon</h3>
+          <h2>Dione</h2>
+        </div>
+        <div class='enceladus moon'>
+          <h3>Moon</h3>
+          <h2>Enceladus</h2>
+        </div>
+        <div class='ti trajectory'></div>
+        <div class='di trajectory'></div>
+        <div class='enc trajectory'></div>
+        <div class='planet_description saturn'>
+          <h2>Planet</h2>
+          <h1>Saturn</h1>
+          <p>Saturno, el titán de los anillos, rodeado de belleza y misterio que desafían nuestra comprensión.</p>
+          <label for='readSaturn'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet uranus'>
+        <div class='miranda moon'>
+          <h3>Moon</h3>
+          <h2>Miranda</h2>
+        </div>
+        <div class='ariel moon'>
+          <h3>Moon</h3>
+          <h2>Ariel</h2>
+        </div>
+        <div class='moon umbriel'>
+          <h3>Moon</h3>
+          <h2>Umbriel</h2>
+        </div>
+        <div class='mir trajectory'></div>
+        <div class='ari trajectory'></div>
+        <div class='trajectory umb'></div>
+        <div class='planet_description uranus'>
+          <h2>Planet</h2>
+          <h1>Uranus</h1>
+          <p>Urano, el planeta inclinado que danza en el frío cósmico con su peculiar eje rebelde.</p>
+          <label for='readUranus'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='neptune planet'>
+        <div class='moon triton'>
+          <h3>Moon</h3>
+          <h2>Triton</h2>
+        </div>
+        <div class='moon proteus'>
+          <h3>Moon</h3>
+          <h2>Proteus</h2>
+        </div>
+        <div class='moon nereid'>
+          <h3>Moon</h3>
+          <h2>Nereid</h2>
+        </div>
+        <div class='trajectory tri'></div>
+        <div class='pro trajectory'></div>
+        <div class='ner trajectory'></div>
+        <div class='neptune planet_description'>
+          <h2>Planet</h2>
+          <h1>Neptune</h1>
+          <p>Neptuno, el reino de los vientos helados y las aguas profundas, oculto en la oscuridad del sistema solar.</p>
+          <label for='readNeptune'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    <div class='solar_systm'>
+      <div class='planet pluto'>
+        <div class='planet_description pluto'>
+          <h2>Dwarf planet</h2>
+          <h1>Pluto</h1>
+          <p>
+
+            Plutón:
+            
+            "Plutón, el exiliado lejano, un mundo de hielo y sombras, siempre en el borde del sistema solar.</p>
+          <label for='readPluto'>
+            <a>
+              Viajar ahora
+              
+            </a>
+          </label>
+        </div>
+        <div class='overlay'>               </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel: Mercurio -->
+  <input class='read' id='readMercury' type='radio' name='mercuryRead'>
+<label class='closeBig' for='closeMercury'></label>
+<input class='read' id='closeMercury' type='radio' name='mercuryRead'>
+<div class='panel'>
+  <h1>Mercurio</h1>
+  <p><strong>Paquete:</strong> Escapada Extrema a Mercurio – “El Mensajero Solar”</p>
+  <p><strong>Duración:</strong> 3 a 6 meses</p>
+  <p><strong>Alojamiento:</strong> Base subterránea avanzada protegida de la radiación.</p>
+  <p><strong>Actividades:</strong> Observación solar desde mirador blindado, exploración en vehículos presurizados, experimentos científicos, vistas orbitales de la Tierra.</p>
+  <p><strong>Reabastecimiento:</strong> Paradas en órbita terrestre baja (LEO) y posible apoyo desde base lunar.</p>
+  <p><strong>Precio:</strong> Desde $1.5 billones USD</p>
+  <button onclick="openModal('Mercurio')">Ver imágenes del hotel</button>
+
+</div>
+
+
+<!-- Panel: Venus -->
+<input class='read' id='readVenus' type='radio' name='venusRead'>
+<label class='closeBig' for='closeVenus'></label>
+<input class='read' id='closeVenus' type='radio' name='venusRead'>
+<div class='panel'>
+  <h1>Venus</h1>
+  <p><strong>Paquete:</strong> Aventura Atmosférica – “El Velo Naranja Flotante”</p>
+  <p><strong>Duración:</strong> Variable según misión</p>
+  <p><strong>Alojamiento:</strong> Ciudad flotante en atmósfera superior</p>
+  <p><strong>Actividades:</strong> Observación de nubes ácidas, vuelos en aeronaves pequeñas, estudios del efecto invernadero y vistas a la superficie con sensores.</p>
+  <p><strong>Reabastecimiento:</strong> Paradas en órbita terrestre baja (LEO)</p>
+  <p><strong>Precio:</strong> Desde $2 billones USD</p>
+  <button onclick="openModal('Venus')">Ver imágenes del hotel</button>
+</div>
+
+<!-- Panel: Tierra & Luna -->
+<input class='read' id='readEarth' type='radio' name='earthRead'>
+<label class='closeBig' for='closeEarth'></label>
+<input class='read' id='closeEarth' type='radio' name='earthRead'>
+<div class='panel'>
+  <h1>Tierra y Luna</h1>
+  <p><strong>Paquete:</strong> Retiro en Órbita – “El Oasis Azul”</p>
+  <p><strong>Duración:</strong> 1 a 2 semanas</p>
+  <p><strong>Alojamiento:</strong> Estación Espacial Internacional o futuros hoteles espaciales.</p>
+  <p><strong>Actividades:</strong> Observación terrestre, microgravedad, ciencia, comidas espaciales, caminatas espaciales (opcional).</p>
+  <p><strong>Reabastecimiento:</strong> ISS y hoteles son reabastecidos regularmente.</p>
+  <p><strong>Precio:</strong> Vuelo suborbital: $450K – $600K USD / ISS: $50M – $65M USD</p>
+  <button onclick="openModal('Tierra')">Ver imágenes del hotel</button>
+</div>
+
+<!-- Panel: Marte -->
+<input class='read' id='readMars' type='radio' name='marsRead'>
+<label class='closeBig' for='closeMars'></label>
+<input class='read' id='closeMars' type='radio' name='marsRead'>
+<div class='panel'>
+  <h1>Marte</h1>
+  <p><strong>Paquete:</strong> Pioneros en Marte – “La Nueva Frontera Roja”</p>
+  <p><strong>Duración:</strong> 1.5 – 2 años</p>
+  <p><strong>Alojamiento:</strong> Hábitats presurizados, subterráneos o impresos en 3D</p>
+  <p><strong>Actividades:</strong> Exploración en rovers, agricultura marciana, investigación geológica, vistas de Fobos y Deimos, puestas de sol azules.</p>
+  <p><strong>Reabastecimiento:</strong> Paradas en LEO y producción in situ (ISRU)</p>
+  <p><strong>Precio:</strong> Desde $5 billones USD</p>
+  <button onclick="openModal('Marte')">Ver imágenes del hotel</button>
+</div>
+
+<!-- Panel: Júpiter -->
+<input class='read' id='readJupiter' type='radio' name='jupiterRead'>
+<label class='closeBig' for='closeJupiter'></label>
+<input class='read' id='closeJupiter' type='radio' name='jupiterRead'>
+<div class='panel'>
+  <h1>Lunas de Júpiter</h1>
+  <p><strong>Paquete:</strong> Exploración Lunar Joviana – “Los Océanos Escondidos”</p>
+  <p><strong>Destino:</strong> Europa, Ganímedes o Calisto</p>
+  <p><strong>Duración:</strong> 3 a 5 años</p>
+  <p><strong>Alojamiento:</strong> Base subterránea blindada</p>
+  <p><strong>Actividades:</strong> Perforación de hielo, exploración submarina, geología, búsqueda de vida, observación de Júpiter.</p>
+  <p><strong>Reabastecimiento:</strong> Paradas en LEO y posible ISRU</p>
+  <p><strong>Precio:</strong> Desde $7.5 billones USD</p>
+  <button onclick="openModal('Jupiter')">Ver imágenes del hotel</button>
+</div>
+
+<!-- Panel: Saturno -->
+<input class='read' id='readSaturn' type='radio' name='saturnRead'>
+<label class='closeBig' for='closeSaturn'></label>
+<input class='read' id='closeSaturn' type='radio' name='saturnRead'>
+<div class='panel'>
+  <h1>Lunas de Saturno</h1>
+  <p><strong>Paquete:</strong> Descubrimiento – “Los Mundos Anillados”</p>
+  <p><strong>Destino:</strong> Titán o Encélado</p>
+  <p><strong>Duración:</strong> 5 a 8 años</p>
+  <p><strong>Alojamiento:</strong> Hábitats en Titán / bases subterráneas en Encélado</p>
+  <p><strong>Actividades:</strong> Navegar lagos de metano, estudio de hidrocarburos, recolección de penachos, búsqueda de vida.</p>
+  <p><strong>Reabastecimiento:</strong> Paradas en LEO y sistema joviano</p>
+  <p><strong>Precio:</strong> Desde $9 billones USD</p>
+  <button onclick="openModal('Saturno')">Ver imágenes del hotel</button>
+</div>
+
+<!-- Panel: Urano -->
+<input class='read' id='readUranus' type='radio' name='uranusRead'>
+<label class='closeBig' for='closeUranus'></label>
+<input class='read' id='closeUranus' type='radio' name='uranusRead'>
+<div class='panel'>
+  <h1>Urano</h1>
+  <p><strong>Paquete:</strong> Misión futura en desarrollo</p>
+  <p>Actualmente no disponible para turismo. Pronto exploración de sus lunas y atmósfera será posible.</p>
+</div>
+
+<!-- Panel: Neptuno -->
+<input class='read' id='readNeptune' type='radio' name='neptuneRead'>
+<label class='closeBig' for='closeNeptune'></label>
+<input class='read' id='closeNeptune' type='radio' name='neptuneRead'>
+<div class='panel'>
+  <h1>Neptuno</h1>
+  <p><strong>Paquete:</strong> Exploración visual – “Vientos Helados”</p>
+  <p><strong>Duración:</strong> En planificación</p>
+  <p><strong>Actividades:</strong> Sobrevuelos de Tritón, observación de tormentas azules y estructuras climáticas.</p>
+</div>
+
+
+<!-- Panel: Plutón -->
+<input class='read' id='readPluto' type='radio' name='plutoRead'>
+<label class='closeBig' for='closePluto'></label>
+<input class='read' id='closePluto' type='radio' name='plutoRead'>
+<div class='panel'>
+  <h1>Plutón</h1>
+  <p><strong>Paquete:</strong> Observatorio “Caronte”</p>
+  <p><strong>Duración:</strong> 2 a 4 días en órbita</p>
+  <p><strong>Actividades:</strong> Observación del corazón helado de Plutón, vistas de Caronte y reflexión sobre el universo.</p>
+</div>
+<!-- Modal debe ir aquí, antes del cierre de </body> -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="slider">
+      <img id="sliderImage" src="" alt="Imagen">
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </div>
+</div>
+<script src="scripts/script_modal.js"></script>
+</body>
+</html>
+
+

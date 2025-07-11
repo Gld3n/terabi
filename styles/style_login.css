@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('atardecer.png');
+    padding: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+.button {
+     width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #2676cc;
+    
+}
+
+.button:hover {
+    background-color: #0056b3;
+    color:white;
+}
+.button2 {
+    width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: bold;
+   color: white;
+   background-color: #2676cc;
+   
+}
+
+.button2:hover {
+   background-color: #0056b3;
+   color:white;
+}
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;                  /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste preciso al centro */
+    background-color: #e5dfc0;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.popup.hide {
+    opacity: 0;
+    transform: translate(-50%, -20px); /* animación suave hacia arriba */
+}
+.header {
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 1px 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+
+.header-content:form{
+    padding: 0;
+}
